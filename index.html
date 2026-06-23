@@ -8,12 +8,23 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;}
+
+
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #222;}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
+.w3-button a {
+    text-decoration: none;
+}
+.w3-section p i{
+  font-size: clamp(1.5rem, 4vw, 3rem)!important;
+    color: #fff !important;
+  transition: transform 0.3s ease, color 0.3s ease!important;
+}
+
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) 
 {#main {margin-left: 0}
@@ -21,6 +32,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .Skills{
 flex-direction: column;
 } 
+
+.w3-section p i{
+  font-size: clamp(1.5rem, 4vw, 3rem)!important;
+    color: #fff !important;
+  transition: transform 0.3s ease, color 0.3s ease!important;
+}
+
 
 .technical, .professional{
   width: 100% !important;
@@ -40,7 +58,6 @@ flex-direction: column;
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
   
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
@@ -74,14 +91,14 @@ flex-direction: column;
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Arthur G. Mcgill</h1>
+    <h1 class="w3-jumbo"  style="font-size: clamp(2rem, 6vw, 6rem)!important;"><span class="w3-hide-small">I'm</span > Arthur G. Mcgill</h1>
     <p> Web Developer and a Free lencer</p>
-    <img src="web7.jpeg" alt="boy" class="w3-image" width="992" height="1108">
+    <img src="webimg.png" alt="boy" class="w3-image" width="992" height="1108">
   </header> 
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey"> Welcome to my portfolio</h2>
+    <h2 class="w3-text-light-grey" style="font-size: clamp(2rem, 6vw, 6rem)!important;"> Welcome to my portfolio</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>
        
@@ -218,16 +235,23 @@ When I'm not coding or learning new technologies, I enjoy researching industry t
         Project In Progress
       </div> 
     </div>
+                
+                <button class="w3-button w3-light-grey w3-padding-large w3-section" style="border-radius: 5px!important;">
+                      <i class="fa fa-download"></i>  
+                      <a href="Arthur G. Mcgill CV.pdf" download> Download Resume</a>
+                    </button>
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i>  
-      <a href="Arthur G. Mcgill CV.pdf" download> Download Resume</a>
-    </button>
-  
-    
 
-   
-  
+                    <button class="w3-button w3-light-grey w3-padding-large w3-section" style="border-radius: 5px!important;">
+                      <i class="fa fa-eye"></i>
+                      <a href="Web-portfolio.html" target="_self"> View Resume</a>
+                    </button>
+                  
+
+
+              
+                  
+                
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
     <h2 class="w3-text-light-grey">My Photos</h2>
@@ -236,20 +260,18 @@ When I'm not coding or learning new technologies, I enjoy researching industry t
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-         <img src="web1.jpeg" style="width:100%">
-       <img src="image2.jpeg" style="width:100%">
+        <img src="image5.jpeg" style="width:100%">
         <img src="image7.jpeg" style="width:100%">
         <img src="image4.jpeg" style="width:100%">
         <img src="image3.jpeg" style="width:100%">
-        
+
       </div>
 
       <div class="w3-half">
         <img src="image1.jpeg" style="width:100%">
         <img src="image8.jpeg" style="width:100%">
         <img src="image10.jpeg" style="width:100%">
-        <img src="image5.jpeg" style="width:100%">
-        <img src="web3.jpeg" style="width:100%">
+        <img src="image2.jpeg" style="width:100%">
       </div> 
     <!-- End photo grid -->
     </div>
@@ -262,33 +284,33 @@ When I'm not coding or learning new technologies, I enjoy researching industry t
     <h2 class="w3-text-light-grey">Contact Me</h2>
     <hr style="width:200px" class="w3-opacity">
 
-    <div class="w3-section">
+    <div class="w3-section" display="flex!important " style="flex-direction: column!important; align-items: left !important;">
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Duazon Margibi County Liberia</p>
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +231 888536605 / +231 776068438</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: agmcgill2476@gmail.com</p>
     </div><br>
     <p>Let's get in touch. Send me a message:</p>
 
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
+    <form action="https://formsubmit.co/agmcgill2476@gmail.com" method="POST" style="display: flex !important; flex-direction: column!important; align-items: left !important;"> 
+
+        <input class="w3-input w3-padding-16" type="text" name="Name"  placeholder="Name"  required> </p>
+        <p> <input class="w3-input w3-padding-16" type="email"  name="Email" placeholder="Email" required> </p>
+        <p><input class="w3-input w3-padding-16" type="text" name="Subject" placeholder="Subject"  required> </p>
+        <p> <textarea class="w3-input w3-padding-16"  name="Message" placeholder="Message" required></textarea>  </p>
+        <p> <button class="w3-button w3-light-grey w3-padding-large" type="submit"><i class="fa fa-paper-plane">SEND MESSAGE </i></button></p>
     </form> 
+
   <!-- End Contact Section -->
   </div>
   
     <!-- Footer -->
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
     
-<a href="https://www.facebook.com/Mcgarthonic?mibextid=ZbWKwL" target="_blank">  <i class="fa fa-facebook w3-text-blue w3-xxlarge"></i></a>
-<a href="https://wa.me/message/432SA7U2PG46E1L" target="_blank">   <i class="fa fa-whatsapp w3-xxlarge w3-text-green"></i></a>
+<a href="https://www.facebook.com/Mcgarthonic?mibextid=ZbWKwL" target="_blank">  <i class="fa fa-facebook w3-text-blue w3-xxlarge"></i></a> &nbsp; 
 
+<a href="https://wa.me/message/432SA7U2PG46E1L" target="_blank">   <i class="fa fa-whatsapp w3-xxlarge w3-text-green"></i></a> &nbsp;
+
+ <a href="https://www.linkedin.com/in/arthur-g-mcgill-a03a7929a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"> <i class="fa fa-linkedin w3-text-blue w3-xxlarge"></i> </a>
 
     <p class="w3-medium">Developed By: <span>Arthur G. Mcgill</span></p> 
   <!-- End footer -->
